@@ -29,7 +29,7 @@
     border-style: solid;
     text-align: center;
     margin-top: 1px;
-    transform: translateY(-1000px);
+    transform: translateY(-1200px);
     position: absolute;
 }
 #menu:hover {
@@ -77,7 +77,7 @@ body {
     justify-content: flex-start;
     width: 100px;
     height: 1000px;
-    background: black;
+    background: rgb(43, 43, 43)
     animation-duration: 1;
     animation-name: slide;
     width: 0px;
@@ -89,10 +89,5 @@ body {
     border-radius: 10px;
 }
 #pre {
-    width: 270px;
-    height: 100px;
-    margin-top: 10px;
-    margin-left: 10px;
-    background-color: rgb(51, 51, 51);
-    
+    color: whitesmoke;
 }
