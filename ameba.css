@@ -28,9 +28,11 @@
     border-width: 3px;
     border-style: solid;
     text-align: center;
-    margin-top: 1px;
-    transform: translateY(-1200px);
-    position: absolute;
+    transform: translateY(-400px);
+
+    
+    
+
 }
 #menu:hover {
     opacity: 0.6;
@@ -73,21 +75,88 @@ body {
     margin-right: 100px;
 }
 #finallyMENU {
-    display: flex;
-    justify-content: flex-start;
-    width: 100px;
-    height: 1000px;
-    background: rgb(43, 43, 43);
-    animation-duration: 1;
-    animation-name: slide;
-    width: 0px;
-    
+    top: 0;
     left: 0;
-    position: static;
-    transform: translateX(-10px);
-    transition: 0.2s;
+    background-color: white;
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(26, 26, 26);
     border-radius: 10px;
+    
+
 }
-#pre {
+#amigo {
     color: whitesmoke;
+    visibility: hidden;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+}
+#thelinebetweentext {
+    width: 280px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(56, 53, 53);
+    height: 1px;
+    
+}
+#theline {
+    width: 280px;
+    
+    margin-left: 10px;
+    background-color: rgb(56, 53, 53);
+    height: 1px;
+}
+#theeline {
+    width: 280px;
+    margin-top: 100px;
+    margin-left: 10px;
+    background-color: rgb(56, 53, 53);
+    height: 1px;
+}
+#buttona {
+    margin-left: 10px;
+    width: 280px;
+    height: 55px;
+    background-color:   rgb(26, 26, 26);
+    border-style:none;
+    
+    color: azure;
+    font-size: 25px;
+    text-align: left;
+    display: block;
+    
+    
+
+    
+}
+.B {
+    visibility: hidden;
+}
+.lina {
+    visibility: hidden;
+}
+#buttona:hover {
+    background-color: rgb(36, 36, 36);
+
+}
+#thingthatnobodycaresaboutlol {
+    color: azure;
+    font-size: 9px;
+    transform: translateY(350px);
+    font-family: "Lato", sans-serif;
+    margin-left: 150px;
+}
+#NEWS{
+    font-size: 25px;
+    margin-left: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    margin-top: 200px;
+}
+#newss {
+    margin-top: 50px;
 }
