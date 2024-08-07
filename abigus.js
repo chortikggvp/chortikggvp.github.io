@@ -33,6 +33,3 @@ document.getElementById("menu").onclick = function(){
     }
 
 }
-document.getElementById("buttona").onclick = function(){
-    window.alert("Not Implemented")
-}
