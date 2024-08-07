@@ -84,6 +84,7 @@ body {
     background-color: rgb(26, 26, 26);
     border-radius: 10px;
     
+    
 
 }
 #amigo {
@@ -123,11 +124,12 @@ body {
     height: 55px;
     background-color:   rgb(26, 26, 26);
     border-style:none;
-    
+    font-family:Arial, Helvetica, sans-serif;
     color: azure;
     font-size: 25px;
     text-align: left;
     display: block;
+    text-decoration: none;
     
     
 
