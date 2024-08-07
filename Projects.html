@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <style>
-        body {
-            background-color: black;
-            
-        }
-        #secret {
-            color: black;
-            transition: 3s;
-            font-size: 40px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            margin-top: 200px;
-        }
-    </style>
+    <title>Lobby</title>
+    <link rel="icon" type="image/x-icon" href="SPOILER_Chortik_Matvey.png">
+    <link href="ameba.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body id="uhm">
-    <p id="secret">
-        Enter the password:
-    </p>
-    <input type="text" id="badumss" style="
-    width: 20px;
-    height: 50px;
-    cursor:text;
-    color: rgb(0, 0, 0);
-    background-color: black;
-    border-style: none;
-    transition: 0.7s;
-    display: block;
-    margin: auto;
-    font-size: 25px;
-    ">
-    
-    <script>
-        function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
-    sleep(5000).then(() => {document.getElementById("secret").style.color = "white";
+<body>
+
+
+    <main>
+    <h1>Chortik's pocket website</h1>
+    <div id="NEWS">
+        <h2>
+        THE NEWS
         
-    });
-    sleep(7000).then(() => {document.getElementById("badumss").style.backgroundColor = "white";});
+    </h2>
+    <ul>
+        <li>Made menu
+            <p>7th August 2024</p>
+        </li>
+        
+        <li id="newss">Moved to github
+            <p>3rd August 2024</p>
+        </li>
+        
+    </ul>
+    </div>
+    <div id="finallyMENU">
+        <div id="amigo">Hello welcome to my website where i'll be posting my projects or my friend's projects or any updates on the website</div> 
+        <div id="thelinebetweentext" class="lina"></div>
+        <div id="theeline" class="lina"></div>
+        <a href="/Projects.html" id="buttona" class="B">Projects</a>
+        <div id="thingthatnobodycaresaboutlol">© Made By Matvey Rodionov(AKA chortik)</div>
+    </div>
+</main>
+
+
+
+
+
     
-    sleep(7500).then(() => {document.getElementById("badumss").style.width = "400px";});
-    
-    function aboba(){window.open(window.location, '_self'); ww.close(); }
-    print("sorry...")
-    aboba()
-    </script>
 </body>
+
+
+
+
+
+    <button id="menu">☰</button>
+    <script src="abigus.js"></script>
 </html>
