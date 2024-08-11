@@ -1,4 +1,5 @@
 console.log("im coding rn")
+window.alert("im cooking something so this page is useless right now")
 let menu = document.getElementById("finallyMENU")
 console.log("don't disturb me please im coding🦔")
 let x = 0
