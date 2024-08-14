@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            height: 100%; overflow: hidden;
+        }
+        #side-menu {
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-color: rgb(32, 32, 32);
+            width: 150px;
+            position: fixed;
+            border-radius: 10px;
+            transition: 0.2s;
+
+
+            
+        }
+        .mains {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(44, 44, 44);
+            border-style: solid;
+            border-color: rgb(15, 15, 15);
+            border-width: 6px;
+            display: grid;
+            margin-left: 7.5px;
+            margin-top: 50px;
+            transition: opacity 0.2s;
+            
+            background-size: 30px;
+            background-position: 6.5px 5.5px;
+            background-repeat: no-repeat;
+            transition: 0.2s;
+            
+        }
+        #main {
+            
+            background-image: url(icons8-map-50\ \(1\).png);
+            background-size: 30px;
+            background-position: 6.5px 5.5px;
+            background-repeat: no-repeat;
+            margin-top: 147.5px;
+            text-shadow:
+            3px 3px 0 #000,
+            -3px 3px 0 #000,
+            -3px -3px 0 #000,
+            3px -3px 0 #000;
+            
+        }
+        .mains:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        #Projects {
+            background-image: url(cantaloupe.png);
+            background-size: 30px;
+            background-position: 6.5px 5.5px;
+            background-repeat: no-repeat;
+            text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;
+        }
+        
+        #about {
+            width: 100%;
+            height: 100%;
+            margin-left: 100px;
+            background-color: rgb(19, 19, 19);
+            position: fixed;
+            left: 55px;
+            top: 0px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            transition: 0.2s;
+            
+        }
+        #Projeects {
+            width: 100%;
+            height: 100%;
+            margin-left: 100px;
+            background-color: rgb(19, 19, 19);
+            position: fixed;
+            left: 55px;
+            top: 0px;
+            border-radius: 15px;
+            color: white;
+            
+            transition: 0.2s;
+            overflow: scroll;
+            
+        }
+        #discord:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div id="side-menu">
+        <button id="main" class="mains" ><label id="nigga" for="main" style="font-size: 23px; padding-left: 50px; padding-top: 5px; color: white;">ABOUT</label> </button>
+        <button id="main1" class="mains"></button>
+        <button id="main1" class="mains"></button>
+        <button id="main1" class="mains"></button>
+        <button id="Projects" class="mains"><label id="labelforProjects" for="Projects" style="font-size: 23px; padding-left: 40px; padding-top: 5px; color: white;">Projects</label> </button>
+        
+          
+    
+    </div>
+    
+    <div id="about">
+        <h1 style="font-size: 50px;
+        text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;">
+            Welcome.
+        </h1>
+        <img width="10px" src="image.png" alt="" style="margin-left: 1280px; margin-top: 600px;;">
+        <h1 style="transform: translateY(-600px);">NEWS</h1>
+        <h2 style="transform: translateY(-600px);">Updated Website</h2>
+        <h4 style="transform: translateY(-620px);">8/11/2024</h4>
+        <p style="color:  white; position: absolute; right: 160px; bottom: 0;">Made by Matvey Rodionov AKA Chortik</p>
+        <a style="color:  white; position: absolute; right: 160px; bottom: 0;" href="mailto:matveyrodionov64@gmail.com">Email me or idk</a>
+    </div>
+    <div id="Projeects">
+        
+        <h1 style="font-size: 50px;
+        text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;
+    text-align: center;">
+            Projects page.
+        </h1>
+        <div style="background-color: gray; width: 400px; height: 50px; border-radius: 10px; position: fixed; top: 138px; left: 250px;"></div>
+            <p style="font-size: 35px;
+            margin-top: 50px;
+            transform: translateX(100px);">
+            Server in Discord Tea Cult:
+            </p>
+            <img width="500px" height="70px" style="margin-left: 700px; transform: translateY(0px); display: flex; border-radius: 5px;" src="1661836169_c-3.jpg" alt="">
+            <div style="background-color: rgb(29, 29, 29); width: 500px; height: 150px; margin-left: 700px; border-radius: 5px;"></div>
+            <button id="discord" style=" transition: 0.2s;  background-color: rgb(28, 104, 45); border-style: none; border-radius: 4px; height: 40px; width: 300px; text-align: center; color: white; font-size: 15px; position: absolute; top: 380px; margin-left: 800px;">Присоединиться</button>
+            <p style="position: fixed; top: 280px; right: 550px; font-size: 25px;">ПРИГЛАШЕНИЕ</p>
+            <p style="position: fixed; top: 320px; right: 400px; font-size: 25px;">☕☕☕СЕКТА ЧАЯ☕☕☕</p>
+        
+        
+        <div>
+            <p style="font-size: 35px;
+            margin-top: 50px;
+            transform: translateX(1000px);">
+            Server in Discord Tea Cult:
+            </p>
+            <img width="500px" height="70px" style="margin-left: 700px; transform: translateY(0px); display: flex; border-radius: 5px;" src="1661836169_c-3.jpg" alt="">
+            <div style="background-color: rgb(29, 29, 29); width: 500px; height: 150px; margin-left: 700px; border-radius: 5px;"></div>
+            <button id="discord" style=" transition: 0.2s;  background-color: rgb(28, 104, 45); border-style: none; border-radius: 4px; height: 40px; width: 300px; text-align: center; color: white; font-size: 15px; position: absolute; top: 380px; margin-left: 800px;">Присоединиться</button>
+            <p style="position: fixed; top: 280px; right: 550px; font-size: 25px;">ПРИГЛАШЕНИЕ</p>
+            <p style="position: fixed; top: 320px; right: 400px; font-size: 25px;">☕☕☕СЕКТА ЧАЯ☕☕☕</p></div>
+        
+        <p style="color:  white; position: absolute; right: 160px; bottom: 0;">Projects are made by Matvey Rodionov (AKA Chortik) and my friends!</p>
+        
+    </div>
+    <img src="image copy.png" id="hedgehog" style="transition: 3s; visibility: hidden; position: absolute; right: 500px;" alt="">
+    
+    
+    
+    
+    
+    <script>
+        function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+        let ilovehedge = "hogs"
+        let buttonstateformain = 1
+        let buttonstateforProjects = 0
+        let keyword = ""
+        Buttoncheck()
+        function buttonmaincheck (){ 
+            if (buttonstateformain == 0){
+                dabutton = document.getElementById("main")    
+                dabutton.style.borderColor = "rgb(15, 15, 15)";
+                dabutton.style.backgroundColor = "rgb(44, 44, 44)";
+                dabutton.style.width = "50px";
+                dabutton.style.height = "50px";
+                dabutton.style.backgroundPosition = "4px 3px";
+                dabutton.style.marginLeft = "10px";
+                dabutton.style.marginTop = "150px";
+                document.getElementById("about").style.visibility = "hidden";
+            }
+                
+                else {
+                    dabutton = document.getElementById("main")
+                    dabutton.style.borderColor = "white";
+                    dabutton.style.backgroundColor = "gray";
+                    dabutton.style.width = "55px";
+                    dabutton.style.height = "55px";
+                    dabutton.style.backgroundPosition = "6.5px 5.5px";
+                    dabutton.style.marginLeft = "7.5px";
+                    dabutton.style.marginTop = "147.5px";
+                    document.getElementById("about").style.visibility = "visible";
+                }
+            }
+            function buttonProjectscheck (){ 
+                if (buttonstateforProjects == 0){
+                dabutton = document.getElementById("Projects")    
+                dabutton.style.borderColor = "rgb(15, 15, 15)";
+                dabutton.style.backgroundColor = "rgb(44, 44, 44)";
+                dabutton.style.width = "50px";
+                dabutton.style.height = "50px";
+                dabutton.style.backgroundPosition = "4px 3px";
+                dabutton.style.marginLeft = "10px";
+                document.getElementById("Projeects").style.visibility = "hidden";
+
+            
+                
+            }
+                
+                else {
+                    dabutton = document.getElementById("Projects")
+                    dabutton.style.borderColor = "white";
+                    dabutton.style.backgroundColor = "gray";
+                    dabutton.style.width = "55px";
+                    dabutton.style.height = "55px";
+                    dabutton.style.backgroundPosition = "8.5px 5.5px";
+                    dabutton.style.marginLeft = "7.5px";
+                    document.getElementById("Projeects").style.visibility = "visible";
+
+                }
+            }
+        function Buttoncheck (){ 
+            buttonProjectscheck()
+            buttonmaincheck()
+            
+            }
+        document.getElementById("main").onclick = function(){
+            buttonstateformain = 1
+            buttonstateforProjects = 0
+            Buttoncheck()
+            
+            }
+        document.getElementById("Projects").onclick = function(){
+            buttonstateforProjects = 1
+            buttonstateformain = 0
+            
+            Buttoncheck()
+        }
+
+
+
+
+            window.addEventListener('keydown', function (e) {
+                
+                if (keyword == ""){
+                    if (e.key == "h"){
+                        keyword = "h"
+                        }
+                        else {keyword = ""}
+                } 
+                else if (keyword == "h"){
+                    if (e.key == "e"){
+                        keyword = "he"
+                        }
+                    else {keyword = ""}
+                } 
+                else if (keyword == "he"){
+                    if (e.key == "d"){
+                        keyword = "hed"
+                        }
+                    else {keyword = ""}
+                } 
+                else if (keyword == "hed"){
+                    if (e.key == "g"){
+                        keyword = "hedg"
+                        }
+                        else {keyword = ""}
+                } 
+                else if (keyword == "hedg"){
+                    if (e.key == "e"){
+                        keyword = "hedge"
+                        }
+                        else {keyword = ""}
+                } 
+                else if (keyword == "hedge"){
+                    if (e.key == "h"){
+                        keyword = "hedgeh"
+                        }
+                        else {keyword = ""}
+                } 
+                else if (keyword == "hedgeh"){
+                    if (e.key == "o"){
+                        keyword = "hedgeho"
+                        }
+                        else {keyword = ""}
+                    }   
+                else if (keyword == "hedgeho"){
+                    let randome = Math.floor(Math.random() * 1000 ) + 100 + "px"
+                    let randomee = Math.floor(Math.random() * 100 ) + "px"
+                    if (e.key == "g"){
+                        
+                        keyword = "hedgehog"
+                        console.log(keyword)
+                        document.getElementById("hedgehog").style.visibility = "Visible"
+                        document.getElementById("hedgehog").style.right = randome;
+                        document.getElementById("hedgehog").style.top = randomee;
+                        sleep(2000).then(() => {document.getElementById("hedgehog").style.visibility = "hidden"; keyword = ""})
+                    }
+                        else {keyword = ""}
+                } 
+                
+            });
+            document.getElementById("about").onclick = function(){
+                document.getElementById("side-menu").style.width = "80px";
+                document.getElementById("nigga").style.visibility = "hidden";
+                document.getElementById("about").style.marginLeft = "30px"
+                
+                
+            }
+
+
+
+            document.getElementById("side-menu").onclick = function(){
+                document.getElementById("side-menu").style.width = "150px";
+                document.getElementById("nigga").style.visibility = "visible";
+                document.getElementById("about").style.marginLeft = "100px"
+
+            }
+            document.getElementById("discord").onclick = function(){
+                window.open("https://discord.gg/shgRBuB2")
+            }
+            
+    </script>
+</body>
+</html>
