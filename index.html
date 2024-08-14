@@ -97,15 +97,12 @@
             color: white;
             
             transition: 0.2s;
-            text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
-            
+            overflow: scroll;
             
         }
-        
+        #discord:hover {
+            opacity: 0.7;
+        }
     </style>
 </head>
 <body>
@@ -137,6 +134,7 @@
         <a style="color:  white; position: absolute; right: 160px; bottom: 0;" href="mailto:matveyrodionov64@gmail.com">Email me or idk</a>
     </div>
     <div id="Projeects">
+        
         <h1 style="font-size: 50px;
         text-shadow:
     3px 3px 0 #000,
@@ -146,17 +144,30 @@
     text-align: center;">
             Projects page.
         </h1>
-        <p style="font-size: 35px;
-        margin-top: 50px;
-        transform: translateX(100px);">
+        <div style="background-color: gray; width: 400px; height: 50px; border-radius: 10px; position: fixed; top: 138px; left: 250px;"></div>
+            <p style="font-size: 35px;
+            margin-top: 50px;
+            transform: translateX(100px);">
             Server in Discord Tea Cult:
-        </p>
-        <img width="500px" height="70px" style="margin-left: 700px; transform: translateY(0px); display: flex; border-radius: 5px;" src="https://cdn.discordapp.com/attachments/834023148755353610/1272227177903161357/1661836169_c-3.jpg?ex=66ba3564&is=66b8e3e4&hm=a1f40ec0213794ce74b6be898a99d16f8e44b2361e14a11e3208b005f2ec4604&" alt="">
-        <div style="background-color: rgb(29, 29, 29); width: 500px; height: 150px; margin-left: 700px; border-radius: 5px;"></div>
-        <a href="https://discord.gg/SYuxPRUs" style="text-decoration: none; color: white;margin-left: 850px;width: 400px;background-color: green; transform: translateY(100px); position: absolute; top: 300px;">Присоединиться</a>
+            </p>
+            <img width="500px" height="70px" style="margin-left: 700px; transform: translateY(0px); display: flex; border-radius: 5px;" src="1661836169_c-3.jpg" alt="">
+            <div style="background-color: rgb(29, 29, 29); width: 500px; height: 150px; margin-left: 700px; border-radius: 5px;"></div>
+            <button id="discord" style=" transition: 0.2s;  background-color: rgb(28, 104, 45); border-style: none; border-radius: 4px; height: 40px; width: 300px; text-align: center; color: white; font-size: 15px; position: absolute; top: 380px; margin-left: 800px;">Присоединиться</button>
+            <p style="position: fixed; top: 280px; right: 550px; font-size: 25px;">ПРИГЛАШЕНИЕ</p>
+            <p style="position: fixed; top: 320px; right: 400px; font-size: 25px;">☕☕☕СЕКТА ЧАЯ☕☕☕</p>
         
         
-        
+        <div>
+            <p style="font-size: 35px;
+            margin-top: 50px;
+            transform: translateX(1000px);">
+            Server in Discord Tea Cult:
+            </p>
+            <img width="500px" height="70px" style="margin-left: 700px; transform: translateY(0px); display: flex; border-radius: 5px;" src="1661836169_c-3.jpg" alt="">
+            <div style="background-color: rgb(29, 29, 29); width: 500px; height: 150px; margin-left: 700px; border-radius: 5px;"></div>
+            <button id="discord" style=" transition: 0.2s;  background-color: rgb(28, 104, 45); border-style: none; border-radius: 4px; height: 40px; width: 300px; text-align: center; color: white; font-size: 15px; position: absolute; top: 380px; margin-left: 800px;">Присоединиться</button>
+            <p style="position: fixed; top: 280px; right: 550px; font-size: 25px;">ПРИГЛАШЕНИЕ</p>
+            <p style="position: fixed; top: 320px; right: 400px; font-size: 25px;">☕☕☕СЕКТА ЧАЯ☕☕☕</p></div>
         
         <p style="color:  white; position: absolute; right: 160px; bottom: 0;">Projects are made by Matvey Rodionov (AKA Chortik) and my friends!</p>
         
@@ -324,6 +335,9 @@
                 document.getElementById("nigga").style.visibility = "visible";
                 document.getElementById("about").style.marginLeft = "100px"
 
+            }
+            document.getElementById("discord").onclick = function(){
+                window.open("https://discord.gg/shgRBuB2")
             }
             
     </script>
