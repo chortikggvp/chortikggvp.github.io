@@ -8,6 +8,7 @@
         body {
             background-color: rgb(0, 0, 0);
             height: 100%; overflow: hidden;
+            transition: 1s;
         }
         #side-menu {
             left: 0;
@@ -103,13 +104,33 @@
         #discord:hover {
             opacity: 0.7;
         }
+        #bimbabtn {
+            background-image: url(bomb.png);
+            background-size: 30px;
+            background-position: 6.5px 2.5px;
+            background-repeat: no-repeat;
+        }
+        #bimba {
+            width: 100%;
+            height: 100%;
+            margin-left: 100px;
+            background-color: rgb(19, 19, 19);
+            position: fixed;
+            left: 55px;
+            top: 0px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            transition: 0.2s;
+            
+        }
     </style>
 </head>
-<body>
+<body id="boody">
     <div id="side-menu">
         <button id="main" class="mains" ><label id="nigga" for="main" style="font-size: 23px; padding-left: 50px; padding-top: 5px; color: white;">ABOUT</label> </button>
         <button id="main1" class="mains"></button>
-        <button id="main1" class="mains"></button>
+        <button id="bimbabtn" class="mains"><label id="labelforbimba" for="bimbabtn" style="font-size: 10px; padding-left: 40px; padding-top: 5px; color: white;">bim bim bam bam sukablyad</label> </button>
         <button id="main1" class="mains"></button>
         <button id="Projects" class="mains"><label id="labelforProjects" for="Projects" style="font-size: 23px; padding-left: 40px; padding-top: 5px; color: white;">Projects</label> </button>
         
@@ -132,6 +153,15 @@
         <h4 style="transform: translateY(-620px);">8/11/2024</h4>
         <p style="color:  white; position: absolute; right: 160px; bottom: 0;">Made by Matvey Rodionov AKA Chortik</p>
         <a style="color:  white; position: absolute; right: 160px; bottom: 0;" href="mailto:matveyrodionov64@gmail.com">Email me or idk</a>
+    </div>
+    
+    
+    <div id="nuc" style="visibility: hidden; height: 100%; width: 100%;">
+        <input id="soobshenie" >
+        <label for="soobshenie">what message to send</label>
+        <input type="number" id="howmanytimes">
+        <label for="howmanytimes">how many times?(NUMBER)</label>
+        <button style="background-color: red; border: 10px; width: 100px; height: 100px; box-shadow: 5px, 5px; position: fixed; margin-left: 750px; margin-top: 100px; font-size: 50px;" id="bumbumshakalaka">bum</button>
     </div>
     <div id="Projeects">
         
@@ -157,7 +187,7 @@
             <p style="position: fixed; top: 320px; right: 400px; font-size: 25px;">☕☕☕СЕКТА ЧАЯ☕☕☕</p>
         
         
-        <div>
+        
             <p style="font-size: 35px;
             margin-top: 50px;
             transform: translateX(1000px);">
@@ -169,23 +199,135 @@
             <p style="position: fixed; top: 280px; right: 550px; font-size: 25px;">ПРИГЛАШЕНИЕ</p>
             <p style="position: fixed; top: 320px; right: 400px; font-size: 25px;">☕☕☕СЕКТА ЧАЯ☕☕☕</p></div>
         
-        <p style="color:  white; position: absolute; right: 160px; bottom: 0;">Projects are made by Matvey Rodionov (AKA Chortik) and my friends!</p>
+            <p id="idkwhyitisbugged" style="color:  white; position: absolute; right: 160px; bottom: 0;">Projects are made by Matvey Rodionov (AKA Chortik) and my friends!</p>
         
     </div>
     <img src="image copy.png" id="hedgehog" style="transition: 3s; visibility: hidden; position: absolute; right: 500px;" alt="">
-    
+    <p id="secret" style="color: black;
+    transition: 3s;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 200px;">
+        Enter the password:
+    </p>
+    <input id="badumss" style="
+    width: 20px;
+    height: 50px;
+    cursor:text;
+    color: rgb(0, 0, 0);
+    background-color: black;
+    border-style: none;
+    transition: 0.7s;
+    display: block;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+
+    ">
     
     
     
     
     <script>
+    const localed = document.getElementById("badumss")
         function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
+function yaderka(){
+            sleep(1).then(() => {
+                        document.getElementById("side-menu").style.width = "0px";
+
+                        document.getElementById("nigga").style.visibility = "hidden";
+                        document.getElementById("labelforbimba").style.visibility = "hidden";
+                        document.getElementById("labelforProjects").style.visibility = "hidden";
+                        
+                        function changeBGColor() {
+                            var cols = document.getElementsByClassName('mains');
+                            for(i = 0; i < cols.length; i++) {
+                            cols[i].style.visibility = 'hidden';
+                        }
+                        
+                        }
+                        changeBGColor()
+                        sleep(7000).then(() => {document.getElementById("badumss").style.backgroundColor = "white";});
+    
+                        sleep(7500).then(() => {document.getElementById("badumss").style.width = "400px";});
+                        document.getElementById("badumss").onfocus = function(){
+    
+                        console.log("uwu")
+                        window.addEventListener('keyup', function (e) {
+                            
+                            
+                            if(e.code == "Enter"){
+                                if(localed.value == atob(secrett))
+                                    console.log("Please Enter.")
+                                    document.getElementById("badumss").style.width = "20px"
+                                    localed.value = ""
+                                    sleep(1000).then(()  => {document.getElementById("badumss").style.backgroundColor = "black"; document.getElementById("badumss").style.visibility = "hidden"})
+                                    
+                                    
+                                    document.getElementById("secret").style.color = "black"
+                                    document.getElementById("secret").style.visibility = "hidden"
+                                    document.getElementById("nuc").style.visibility = "visible"
+                                    document.getElementById("boody").style.backgroundColor = "gray"
+                                    document.getElementById("bumbumshakalaka").onclick = function(){
+                                        let testo = window.prompt("WARNING вроде бы после нажатия окей или что там будет полный капец я заспамлю с этого сайта запросами и будет что то типо ядерки продолжить?(да/нет)")
+                                        let times = document.getElementById("howmanytimes").value
+                                        let messagee = document.getElementById("soobshenie").value
+                                        if(testo == "да"){
+                                            // тут должна быть ядерка но я не изучил этого
+                                            
+                                            
+                                            if(messagee == "" || messagee == " ")
+                                                window.alert("не правильно набрано сообщение или его вообще нет")
+                                            function discord_message(webHookURL, message) {
+                                                var xhr = new XMLHttpRequest();
+                                                xhr.open("POST", webHookURL, true);
+                                                xhr.setRequestHeader('Content-Type', 'application/json');
+                                                xhr.send(JSON.stringify({
+                                                    content: message,
+                                                    username: "ядерка",
+                                                    avatar_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Operation_Upshot-Knothole_-_Badger_001.jpg/400px-Operation_Upshot-Knothole_-_Badger_001.jpg"
+                                                    })
+                                                );
+                                            
+                                            }
+                                            times--
+                                            for(let i = 0; i <= times; i++ ){
+                                                discord_message("https://discord.com/api/webhooks/1269968162732900456/ewWhp8S9AHgYchidCZu7g33L48uQL7MMJZhSA-4M0KLMHm4KqoUsGHSjVwH3WgW9Uvbz", messagee)
+                                            }
+
+                                            
+
+                                        }
+                                        else {
+                                            function aboba(){window.open(window.location, '_self'); ww.close(); }
+                                            aboba()
+                                        }
+                                        console.log(testo)
+                                    }
+
+                                
+                            }
+                        })}
+                        sleep(5000).then(() => {document.getElementById("secret").style.color = "white";
+        
+                        });
+                        sleep(7000).then(() => {document.getElementById("badumss").style.backgroundColor = "white";});
+    
+                        sleep(7500).then(() => {document.getElementById("badumss").style.width = "400px";});
+                        })
+}
+        function testt(){
+            console.log("WHY THE FUCK")
+        }
         let ilovehedge = "hogs"
         let buttonstateformain = 1
         let buttonstateforProjects = 0
+        let buttonstateforbimba = 0
         let keyword = ""
+        const secrett = "aGVkZ2Vob2dzYXJldGhlYmVzdGNyZWF0dXJlc29mYW55a2luZA=="
         Buttoncheck()
         function buttonmaincheck (){ 
             if (buttonstateformain == 0){
@@ -222,8 +364,10 @@
                 dabutton.style.backgroundPosition = "4px 3px";
                 dabutton.style.marginLeft = "10px";
                 document.getElementById("Projeects").style.visibility = "hidden";
-
-            
+                document.getElementById("idkwhyitisbugged").style.visibility = "hidden";
+                
+                
+    
                 
             }
                 
@@ -236,23 +380,66 @@
                     dabutton.style.backgroundPosition = "8.5px 5.5px";
                     dabutton.style.marginLeft = "7.5px";
                     document.getElementById("Projeects").style.visibility = "visible";
+                    document.getElementById("idkwhyitisbugged").style.visibility = "visible";
+
+                }
+            }
+            function buttonbimbacheck (){ 
+                if (buttonstateforbimba == 0){
+                dabutton = document.getElementById("bimbabtn")    
+                dabutton.style.borderColor = "rgb(15, 15, 15)";
+                dabutton.style.backgroundColor = "rgb(44, 44, 44)";
+                dabutton.style.width = "50px";
+                dabutton.style.height = "50px";
+                dabutton.style.backgroundPosition = "4px 3px";
+                dabutton.style.marginLeft = "10px";
+                
+                
+
+            
+                
+            }
+                
+                else {
+                    dabutton = document.getElementById("bimbabtn")
+                    dabutton.style.borderColor = "white";
+                    dabutton.style.backgroundColor = "gray";
+                    dabutton.style.width = "55px";
+                    dabutton.style.height = "55px";
+                    dabutton.style.backgroundPosition = "8.5px 5.5px";
+                    dabutton.style.marginLeft = "7.5px";
+                    yaderka()
+                    testt
+                    
+                    
+
+                    
 
                 }
             }
         function Buttoncheck (){ 
             buttonProjectscheck()
             buttonmaincheck()
-            
+            buttonbimbacheck()
             }
         document.getElementById("main").onclick = function(){
             buttonstateformain = 1
             buttonstateforProjects = 0
+            buttonstateforbimba = 0
             Buttoncheck()
             
             }
         document.getElementById("Projects").onclick = function(){
             buttonstateforProjects = 1
             buttonstateformain = 0
+            buttonstateforbimba = 0
+            
+            Buttoncheck()
+        }
+        document.getElementById("bimbabtn").onclick = function(){
+            buttonstateforProjects = 0
+            buttonstateformain = 0
+            buttonstateforbimba = 1
             
             Buttoncheck()
         }
@@ -324,22 +511,42 @@
                 document.getElementById("side-menu").style.width = "80px";
                 document.getElementById("nigga").style.visibility = "hidden";
                 document.getElementById("about").style.marginLeft = "30px"
-                
+                document.getElementById("labelforbimba").style.visibility = "hidden"
+                document.getElementById("labelforProjects").style.visibility = "hidden"
                 
             }
-
-
-
+            document.getElementById("Projeects").onclick = function(){
+                document.getElementById("side-menu").style.width = "80px";
+                document.getElementById("nigga").style.visibility = "hidden";
+                document.getElementById("Projeects").style.marginLeft = "30px"
+                document.getElementById("labelforbimba").style.visibility = "hidden"
+                document.getElementById("labelforProjects").style.visibility = "hidden"
+                
+            }
+            
             document.getElementById("side-menu").onclick = function(){
                 document.getElementById("side-menu").style.width = "150px";
                 document.getElementById("nigga").style.visibility = "visible";
                 document.getElementById("about").style.marginLeft = "100px"
+                
+                document.getElementById("Projeects").style.marginLeft = "100px"
+                document.getElementById("labelforProjects").style.visibility = "visible"
+                document.getElementById("labelforbimba").style.visibility = "visible"
+
 
             }
             document.getElementById("discord").onclick = function(){
                 window.open("https://discord.gg/shgRBuB2")
             }
             
+        
+    
+    
+        
+    ;
+    
+    
+    
     </script>
 </body>
 </html>
