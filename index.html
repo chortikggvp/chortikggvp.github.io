@@ -98,7 +98,7 @@
             color: white;
             
             transition: 0.2s;
-            overflow: scroll;
+            overflow-y: scroll;
             
         }
         #discord:hover {
@@ -174,32 +174,9 @@
     text-align: center;">
             Projects page.
         </h1>
-        <div style="background-color: gray; width: 400px; height: 50px; border-radius: 10px; position: fixed; top: 138px; left: 250px;"></div>
-            <p style="font-size: 35px;
-            margin-top: 50px;
-            transform: translateX(100px);">
-            Server in Discord Tea Cult:
-            </p>
-            <img width="500px" height="70px" style="margin-left: 700px; transform: translateY(0px); display: flex; border-radius: 5px;" src="1661836169_c-3.jpg" alt="">
-            <div style="background-color: rgb(29, 29, 29); width: 500px; height: 150px; margin-left: 700px; border-radius: 5px;"></div>
-            <button id="discord" style=" transition: 0.2s;  background-color: rgb(28, 104, 45); border-style: none; border-radius: 4px; height: 40px; width: 300px; text-align: center; color: white; font-size: 15px; position: absolute; top: 380px; margin-left: 800px;">Присоединиться</button>
-            <p style="position: fixed; top: 280px; right: 550px; font-size: 25px;">ПРИГЛАШЕНИЕ</p>
-            <p style="position: fixed; top: 320px; right: 400px; font-size: 25px;">☕☕☕СЕКТА ЧАЯ☕☕☕</p>
         
-        
-        
-            <p style="font-size: 35px;
-            margin-top: 50px;
-            transform: translateX(1000px);">
-            Server in Discord Tea Cult:
-            </p>
-            <img width="500px" height="70px" style="margin-left: 700px; transform: translateY(0px); display: flex; border-radius: 5px;" src="1661836169_c-3.jpg" alt="">
-            <div style="background-color: rgb(29, 29, 29); width: 500px; height: 150px; margin-left: 700px; border-radius: 5px;"></div>
-            <button id="discord" style=" transition: 0.2s;  background-color: rgb(28, 104, 45); border-style: none; border-radius: 4px; height: 40px; width: 300px; text-align: center; color: white; font-size: 15px; position: absolute; top: 380px; margin-left: 800px;">Присоединиться</button>
-            <p style="position: fixed; top: 280px; right: 550px; font-size: 25px;">ПРИГЛАШЕНИЕ</p>
-            <p style="position: fixed; top: 320px; right: 400px; font-size: 25px;">☕☕☕СЕКТА ЧАЯ☕☕☕</p></div>
-        
-            <p id="idkwhyitisbugged" style="color:  white; position: absolute; right: 160px; bottom: 0;">Projects are made by Matvey Rodionov (AKA Chortik) and my friends!</p>
+            
+            
         
     </div>
     <img src="image copy.png" id="hedgehog" style="transition: 3s; visibility: hidden; position: absolute; right: 500px;" alt="">
@@ -260,8 +237,9 @@ function yaderka(){
                             
                             
                             if(e.code == "Enter"){
-                                if(localed.value == atob(secrett))
-                                    console.log("Please Enter.")
+                                if(localed.value == atob(secrett)){
+                                    console.log(atob(secrett))
+
                                     document.getElementById("badumss").style.width = "20px"
                                     localed.value = ""
                                     sleep(1000).then(()  => {document.getElementById("badumss").style.backgroundColor = "black"; document.getElementById("badumss").style.visibility = "hidden"})
@@ -276,7 +254,7 @@ function yaderka(){
                                         let times = document.getElementById("howmanytimes").value
                                         let messagee = document.getElementById("soobshenie").value
                                         if(testo == "да"){
-                                            // тут должна быть ядерка но я не изучил этого
+                                            
                                             
                                             
                                             if(messagee == "" || messagee == " ")
@@ -306,7 +284,12 @@ function yaderka(){
                                             aboba()
                                         }
                                         console.log(testo)
-                                    }
+                                    }}
+                            else {
+                                function aboba(){window.open(window.location, '_self'); ww.close(); }    
+                                aboba()
+                                }
+
 
                                 
                             }
@@ -364,7 +347,7 @@ function yaderka(){
                 dabutton.style.backgroundPosition = "4px 3px";
                 dabutton.style.marginLeft = "10px";
                 document.getElementById("Projeects").style.visibility = "hidden";
-                document.getElementById("idkwhyitisbugged").style.visibility = "hidden";
+                
                 
                 
     
@@ -380,7 +363,7 @@ function yaderka(){
                     dabutton.style.backgroundPosition = "8.5px 5.5px";
                     dabutton.style.marginLeft = "7.5px";
                     document.getElementById("Projeects").style.visibility = "visible";
-                    document.getElementById("idkwhyitisbugged").style.visibility = "visible";
+                    
 
                 }
             }
