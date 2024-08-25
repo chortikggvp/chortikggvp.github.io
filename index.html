@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lobby</title>
-    
     <style>
         body {
             background-color: rgb(0, 0, 0);
@@ -127,9 +126,7 @@
         }
     </style>
 </head>
-
 <body id="boody">
-    
     <div id="side-menu">
         <button id="main" class="mains" ><label id="nigga" for="main" style="font-size: 23px; padding-left: 50px; padding-top: 5px; color: white;">ABOUT</label> </button>
         <button id="main1" class="mains"></button>
@@ -177,7 +174,11 @@
     text-align: center;">
             Projects page.
         </h1>
-        
+        <button id="lorem" onclick="lorem()" style="width: 300px; height: 200px; background-color: gray; border-radius: 10px; margin-left: 200px; border-style: solid;">
+            <p style="color: black; font-size: 30px; text-align: center;">LOREM</p>
+            <div style="width: 275px; height: 1px; background-color: white; margin-left: 10px; border-radius: 2px; "></div>
+            <p style="color: black; font-size: 20px; margin-left: 15px;">Lorem made by chortik/(Matvey_Rodionov)</p>
+        </button>
             
             
         
@@ -276,8 +277,7 @@ function yaderka(){
                                             }
                                             times--
                                             for(let i = 0; i <= times; i++ ){
-                                                
-                                                sleep(500).then(() => {discord_message("https://discord.com/api/webhooks/1274053288404189265/nGp7LpIvPyN_fA5uzq2e42DjTXMHqtI-WipwSi94D6MrBWrRdHTgyETAWYmd-AAOG32k", messagee)})
+                                                discord_message("https://discord.com/api/webhooks/1269968162732900456/ewWhp8S9AHgYchidCZu7g33L48uQL7MMJZhSA-4M0KLMHm4KqoUsGHSjVwH3WgW9Uvbz", messagee)
                                             }
 
                                             
@@ -531,7 +531,9 @@ function yaderka(){
     
         
     ;
-    
+    function lorem() {
+        window.location.replace("lorem.html");
+    }
     
     
     </script>
