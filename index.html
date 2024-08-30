@@ -12,16 +12,20 @@
     <meta property="og:image" content="https://outplays.eu/Q5THkfY3/thumbnail.png">
     <meta property="og:video" content="https://cdn.discordapp.com/attachments/1182328918171201668/1277313033206497351/ezgif-4-6ec56b258b.mp4?ex=66ccb5f6&is=66cb6476&hm=0e269deb9b1bda118ceb11c995a2229974ffe42b7e8fd2323fbe2f8e219c8955&.mp4">
     <meta property="og:video:type" content="video/mp4">
-    <meta property="og:video:height" content="498">
-    <meta property="og:video:width" content="388">
-    <meta property="og:image:height" content="498">
-    <meta property="og:image:width" content="388">
+    <meta property="og:video:height" content="720">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta property="og:image:width" content="1280">
     <meta content="#616161" data-react-helmet="true" name="theme-color" />
     <style>
         body {
             background-color: rgb(0, 0, 0);
             height: 100%; overflow: hidden;
             transition: 1s;
+        }
+        #Forum {
+            background-image: url(icons8-chat-64.png);
+            background-position: 5px;
         }
         #side-menu {
             left: 0;
@@ -74,7 +78,7 @@
             cursor: pointer;
         }
         #Projects {
-            background-image: url(cantaloupe.png );
+            background-image: url(cantaloupe.png);
             background-size: 30px;
             background-position: 6.5px 5.5px;
             background-repeat: no-repeat;
@@ -142,8 +146,8 @@
 <body id="boody">
     <div id="side-menu">
         <button id="main" class="mains" ><label id="nigga" for="main" style="font-size: 23px; padding-left: 50px; padding-top: 5px; color: white;">ABOUT</label> </button>
-        <button id="main1" class="mains"></button>
-        <button id="bimbabtn" class="mains"><label id="labelforbimba" for="bimbabtn" style="font-size: 10px; padding-left: 40px; padding-top: 5px; color: white;">bim bim bam bam sukablyad</label> </button>
+        <button id="Forum" class="mains"><label id="Foruu" for="Forum" style="font-size: 23px; padding-left: 40px; padding-top: 5px; color: white;">Forum</label></button>
+        <button id="bimbabtn" class="mains"><label id="labelforbimba" for="bimbabtn" style="font-size: 10px; padding-left: 40px; padding-top: 5px; color: white;">bim bim bam bam *REDACHED*</label> </button>
         <button id="main1" class="mains"></button>
         <button id="Projects" class="mains"><label id="labelforProjects" for="Projects" style="font-size: 23px; padding-left: 40px; padding-top: 5px; color: white;">Projects</label> </button>
         
@@ -197,6 +201,12 @@
             <p style="color: red; font-size: 30px; text-align: center;">da best ART</p>
             <div style="width: 275px; height: 1px; background-color: white; margin-left: 10px; border-radius: 2px; "></div>
             <p style="color: rgb(255, 0, 0); font-size: 20px; margin-left: 15px;">ART made by Kostyanich(hes W)</p>
+
+        </div> 
+        <div id="kostyanichisaW" style="width: 300px; height: 200px; background-color: gray; border-radius: 5px; margin-left: 1000px; border-style: solid; background-image: url('1661836169_c-3.jpg'); background-size: 300px; background-repeat: no-repeat; background-position: 0px; transform: translateY(-405px); border-color: black;">
+            <p style="color: rgb(0, 0, 0); font-size: 30px; text-align: center;">Tea Cult</p>
+            <div style="width: 275px; height: 1px; background-color: white; margin-left: 10px; border-radius: 2px; "></div>
+            <p style="color: rgb(0, 0, 0); font-size: 20px; margin-left: 15px;">Made with tea by me, *Xbox Series*, *Griboba* and others</p>
 
         </div> 
             
@@ -521,6 +531,7 @@ function yaderka(){
                 document.getElementById("about").style.marginLeft = "30px"
                 document.getElementById("labelforbimba").style.visibility = "hidden"
                 document.getElementById("labelforProjects").style.visibility = "hidden"
+                document.getElementById("Foruu").style.visibility = "hidden"
                 
             }
             document.getElementById("Projeects").onclick = function(){
@@ -529,6 +540,7 @@ function yaderka(){
                 document.getElementById("Projeects").style.marginLeft = "30px"
                 document.getElementById("labelforbimba").style.visibility = "hidden"
                 document.getElementById("labelforProjects").style.visibility = "hidden"
+                document.getElementById("Foruu").style.visibility = "hidden"
                 
             }
             
@@ -540,12 +552,13 @@ function yaderka(){
                 document.getElementById("Projeects").style.marginLeft = "100px"
                 document.getElementById("labelforProjects").style.visibility = "visible"
                 document.getElementById("labelforbimba").style.visibility = "visible"
+                document.getElementById("Foruu").style.visibility = "visible"
 
 
             }
-            document.getElementById("discord").onclick = function(){
+            /*document.getElementById("discord").onclick = function(){
                 window.open("https://discord.gg/shgRBuB2")
-            }
+            }*/
             
         
     
@@ -555,7 +568,9 @@ function yaderka(){
     function lorem() {
         window.location.replace("lorem.html");
     }
-    
+    document.getElementById("Forum").onclick = function(){
+        window.location.replace("https://bb06-5-206-58-40.ngrok-free.app/nogga/index.php");
+    }
     
     </script>
 </body>
