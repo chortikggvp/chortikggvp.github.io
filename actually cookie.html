@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: burlywood;">
+    <h1 style="transform: translateX(550px); color: brown;">Cookie clicker! (idea by Waffles)</h1>
+    <h1 id="SCORE"></h1>
+    <div id="UPGRADES" style="position: absolute; left: 1200px;  font-family: 'Courier New', Courier, monospace; width: 300px; height: 300px; background-color: rgb(119, 67, 33); border-radius: 10px; border-width: 3px; border-style: solid;">
+        <p style="font-size: 30px;">UPGRADES:</p>
+        <button>does nothing (for now)</button>
+    </div>
+    <div id="leaderboardoridk" style="background-color: rgb(119, 67, 33); width: 300px; border-radius: 10px; border-color: black; border-style: solid; height: 200px; position: absolute;">
+        <p style="font-size: 20px; font-family: 'Courier New', Courier, monospace;">hi there is not much but im improving it also you can't save your progress (for now) THIS DIV IS FOR LEADERBOARD (in progress)</p>
+    </div>
+    <img id="cookiepng" draggable="false" aria-selected="false" src="actually cookie/chocolate-chip-cookie-isolated-white-transparent-background-png_888962-298-Photoroom.png" alt="failed to load THE pechenka" style="width: 300px; height: 300px; transform: translateX(600px); position: relative;">
+    <!--bruh please don't copy my work i made this at 12 AM cause i was bored-->
+    <script>
+        let cookie = document.getElementById("cookiepng")
+        let score = 0;
+        cookie.onmousedown = function(){
+            cookie.style.width = "250px";
+            cookie.style.height = "250px";
+            cookie.style.top = "25px";
+            cookie.style.left= "25px";
+            score +=1
+            document.getElementById("SCORE").textContent = `YOUR SCORE: ${score}`
+        }
+        cookie.onmouseup = function(){
+            cookie.style.width = "300px";
+            cookie.style.height = "300px";
+            cookie.style.top = "0px";
+            cookie.style.left = "0px";
+        }
+        cookie.onmouseleave = function(){
+            cookie.style.width = "300px";
+            cookie.style.height = "300px";
+            cookie.style.top = "0px";
+            cookie.style.left = "0px";
+
+        }
+
+    </script>
+</body>
+</html>
