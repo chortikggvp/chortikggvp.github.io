@@ -6,10 +6,27 @@
     <title>Document</title>
 </head>
 <body style="background-color: black; transition: 10s;" id="e">
-    <h1 id="idk" style="color: white; transition: 1s; text-align: center; position:fixed; top: 100px;left: 450px; font-size: 70px;">We will be right back</h1>
-    <iframe src="a.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-    </iframe> 
-    <script>
+    <h1 id="EA" style="display: none;"></h1>
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;" id="ea">
+        <h1 id="idk" style="color: white; transition: 1s; text-align: center; position:fixed; top: 100px;left: 450px; font-size: 70px;">CLICK ME TO TURN ON SOUNDS</h1> 
+    </div>
+    <iframe src="" id="iff" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999; visibility: hidden;"></iframe>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script>
+        let a = 0
+        var msuic = new Audio("a.mp3");
+        document.getElementById("ea").onclick = function(){
+            if(a == 0){
+                
+                msuic.play();
+                a = 1
+                document.getElementById("idk").textContent = "We will be right back"
+            }
+            
+
+            
+        }
+
         function e(){
             document.getElementById("idk").style.color = "WHITE";
         }
@@ -20,6 +37,34 @@
         }
         
         setInterval(uhh,2000)
+        
+        
+        
+        
+        
+        
+        
+        
+        let url = "http://5.206.47.44:5500/status.json"
+        let tries
+        resul = document.getElementById("EA").textContent
+        let hmm;
+        var i = 1;                  //  set your counter to 1
+
+function myLoop() {         //  create a loop function
+  setTimeout(function() {   //  call a 3s setTimeout when the loop is called
+    console.log('hello');   //  your code here
+    i++;                    //  increment the counter
+    if (i < 999) {           //  if the counter < 10, call the loop function
+      myLoop();
+      $.getJSON(url,function(data){}).fail(function(idk){console.log("пиздец")}).done(function(yay){if(yay.status == "notworking"){document.getElementById("idk").textContent = "We will be right back(status:debugging)"}else{document.getElementById("iff").style.visibility = "visible";document.getElementById("iff").src = "http://5.206.47.44:8080/offline/indexed.html"; i = 1000;msuic.pause() }
+})  //  ..  again which will trigger another 
+    }                       //  ..  setTimeout()
+  }, 5000)
+}
+myLoop()
+        
+        
     </script>
 </body>
 </html>
